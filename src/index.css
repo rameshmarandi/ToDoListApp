@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+ 
+}
+
+.main_div{
+  width: 100%;
+  height: 100vh;
+  background: #b8e994;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_div{
+  width:25% ;
+  height:70vh;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+h1{
+  font-family: 'Goldman', cursive;
+  color:black;
+  background:transparent;
+  padding: 10px 0 10px 0;
+  line-height: 45px;
+  margin-bottom: 20px;
+  font-size: 45px;
+  font-weight: 500;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  letter-spacing:2px;
+}
+
+input{
+  text-align: center;
+  height:30px;
+  top: 10px;
+  border: none;
+  background:transparent;
+  font-size: 20px;
+  font-weight: 60%;
+  border-bottom: 2px solid #3f1375;
+  outline: none;
+}
+
+.newButton{
+ min-height: 40px;
+ min-width: 55px;
+  border-radius: 60%;
+  border-color: transparent;
+  background-color: #1baf07;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  border: none;
+  outline:none;
+  /* margin-left: 0px; */
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+
+ol{
+  margin-top:28px;
+}
+
+ol li{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display:flex;
+  align-items:center;
+  color: #000;
+  text-transform: capitalize;
+}
+.todo_style{
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items:center;
+}
+.todo_style .dele {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+
+.todo_style .dele:hover{
+  background-color: crimson;
+}
+
+.todo_style .dele:hover style{
+color: red;
+}
+
+@media (max-width: 768px){
+  .center_div{
+    width:55%;
+  }
+  .todo_style .fa-times{
+    margin: 0 15px 0 15px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  button{
+    margin-left:5px;
+    min-height: 40px;
+    width:40px;
+    color: #fff;
+    font-size: 30px;
+  }
+}
